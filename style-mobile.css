@@ -34,7 +34,10 @@ i.fa-brands.fa-github {
 
 .testimonials-elem-project img {
   width: 85vw;
-  
+}
+.testimonials-elem-project:hover {
+  transform: scale(1);
+  cursor: pointer;
 }
 
 .container {
