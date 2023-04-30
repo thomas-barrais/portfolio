@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #00a2ff;
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none; /* Supprime la soulignement de lien */
+  color: #000; /* Couleur du texte du lien */
+  /* Autres styles */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-title a {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar-items a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.container h2 {
+  margin-bottom: 0;
+}
+.container h3 {
+  font-weight: 400;
+}
+
+.testimonials {
+  padding: 5rem 1rem 5rem 1rem;
+  z-index: 0;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.testimonials-elem {
+  flex: 1;
+  background: white;
+  border-radius: 5px;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  z-index: 0;
+}
+
+.testimonials-elem-text {
+  padding: 0.2rem;
+}
+.testimonials-elem-text p i {
+  margin: 0.2rem;
+}
+
+.testimonials-elem-text h2 {
+  text-align: center;
+}
+
+.testimonials-elem-text p {
+  text-align: left;
+}
+
+.text-reverse {
+  text-align: right !important;
+}
+
+.testimonials-elem-profil {
+  display: inline-block;
+  position: relative;
+}
+
+.testimonials-elem-profil:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.testimonials-elem-profil:hover::before {
+  opacity: 1;
+}
+
+
+.testimonials-elem-profil p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1.5rem;
+}
+
+.testimonials-elem-profil img {
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-elem-project:hover {
+  transform: scale(1.21);
+  cursor: pointer;
+}
+
+.testimonials-elem-project {
+  display: inline-block;
+  position: relative;
+}
+
+.testimonials-elem-project:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.testimonials-elem-project:hover::before {
+  opacity: 1;
+}
+
+.testimonials-elem-project p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.testimonials-elem-project img {
+  height: 20rem;
+  width: auto;
+  margin-bottom: 0.5rem;
+}
+
+i.fa-brands.fa-linkedin,
+i.fa-brands.fa-github,
+i.fa-solid.fa-arrow-up-right-from-square {
+  font-size: 2.5rem;
+}
+
+.tech-stack {
+  margin-top: 5rem;
+  font-weight: 700;
+}
+
+.tech-stack i {
+  font-size: 3.5rem;
+  vertical-align: middle;
+}
+
+i.fa-brands.fa-html5 {
+  margin-left: 3.5rem;
+}
+
+i.fa-brands.fa-github {
+  margin-right: 5.5rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cercle-tourne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+}
+
+.box:hover {
+  transform: scale(1.21);
+}
+
+.box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  animation: 1s linear infinite alternate boxMagic,
+  4s linear infinite spinning;
+  padding-top: 300px;
+  background-image: url(thomasbarrais.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes boxMagic {
+  from {
+    box-shadow:
+    0 0 0 #feac5e,
+    0 0 0 #c779d0,
+    0 0 0 #4bc0c8,
+    0 0 0 #42db75
+  }
+  to {
+    box-shadow:
+    0 -10px 0 #feac5e,
+    -10px 0 0 #c779d0,
+    0 10px 0 #4bc0c8,
+    10px 0 0 #42db75
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+i:hover {
+  transform: scale(1.21);
+  color: blue;
+}

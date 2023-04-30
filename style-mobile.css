@@ -1,0 +1,31 @@
+.testimonials-elem-text p {
+  text-align: center;
+}
+
+.text-reverse {
+  text-align: center !important;
+}
+
+.testimonials-elem {
+  flex-direction: column;
+}
+
+.testimonials-elem-reverse {
+  flex-direction: column-reverse;
+}
+
+.testimonials-elem-profil-text,
+.testimonials-elem-project-text {
+  text-align: center;
+}
+
+.testimonials-elem-profil img,
+.testimonials-elem-project img{
+  display: block;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+.container {
+  margin-left: 20px;
+}
