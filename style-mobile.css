@@ -1,8 +1,11 @@
-.tech-stack p{
-  display: block;
+.testimonials-elem-text p {
+  text-align: center;
 }
 
-.testimonials-elem-text p {
+i.fa-brands.fa-github {
+  margin: 0 0;
+}
+.logo {
   text-align: center;
 }
 
@@ -27,7 +30,10 @@
 .testimonials-elem-project img{
   display: block;
   margin: 2rem auto;
-  width: 50vw;
+}
+
+.testimonials-elem-project img {
+  width: auto;
 }
 
 .container {
