@@ -48,10 +48,14 @@ i.fa-brands.fa-github {
 
 .testimonials-elem-project img {
   width: 90vw;
+  align-items: center;
+  text-align: center;
+  
 }
 .testimonials-elem-project:hover {
-  transform: scale(1);
+  transform: scale(0.9);
   cursor: pointer;
+  
 }
 
 .container {
