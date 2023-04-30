@@ -1,3 +1,7 @@
+.tech-stack p{
+  display: block;
+}
+
 .testimonials-elem-text p {
   text-align: center;
 }

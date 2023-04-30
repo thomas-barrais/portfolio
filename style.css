@@ -226,7 +226,7 @@ i.fa-solid.fa-arrow-up-right-from-square {
 }
 
 .tech-stack {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   font-weight: 700;
 }
 
@@ -235,8 +235,23 @@ i.fa-solid.fa-arrow-up-right-from-square {
   vertical-align: middle;
 }
 
-i.fa-brands.fa-html5 {
-  margin-left: 3.5rem;
+.tech-stack i.fa-brands.fa-html5:hover {
+  color: #FF6600;
+}
+.tech-stack i.fa-brands.fa-css3-alt:hover {
+  color: #264EE4;
+}
+.tech-stack i.fa-brands.fa-sass:hover {
+  color: #bf4080;
+}
+.tech-stack i.fa-brands.fa-square-js:hover {
+  color: #f7df1e;
+}
+.tech-stack i.fa-brands.fa-python:hover {
+  color: #3B78A7;
+}
+.tech-stack i.fa-brands.fa-php:hover {
+  color: #787cb4;
 }
 
 i.fa-brands.fa-github {
@@ -346,4 +361,11 @@ i:hover {
 .btn-mail a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width : 530px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
 }
