@@ -20,13 +20,13 @@
   <header>
     <nav class="navbar">
       <div class="navbar-title">
-        <a href="#">Thomas - Dev</a>
+        <a href="index.html">Thomas - Dev</a>
       </div>
       <div class="navbar-items">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="#AboutMe">About</a>
+        <a href="#Project">Project</a>
+        <a href="#Contact">Contact</a>
       </div>
     </nav>
   </header>
@@ -68,7 +68,7 @@
       </div>
     </div>
   </section>
-  <section class="testimonials">
+  <section id="AboutMe" class="testimonials">
     <div class="container">
       <div class="testimonials-content">
         <div class="testimonials-elem testimonials-elem-reverse">
@@ -91,9 +91,18 @@
         </div>
       </div>
   </section>
-  <div class="container">
+  <div id="Project" class="container">
     <h2>All of my projects</h2>
     <h3>Each project is focused on one programming language</h3>
+  </div>
+  <div class="testimonials-elem-text mt40">
+    <h2>
+      Mon CV
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-sass"></i>
+      <i class="fa-brands fa-square-js"></i>
+    </h2>
   </div>
   <section class="cercle-tourne">
     <div class="box">
@@ -108,6 +117,12 @@
       <div class="testimonials-content">
         <div class="testimonials-elem">
           <div class="testimonials-elem-text">
+            <h2>
+              Agence immobilière
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </h2>
             <p>
               <i class="fas fa-quote-left"></i>
               Cette page web est une présentation du site de l'agence immobilière "Agence Confidentiel". La page contient un en-tête 
@@ -146,6 +161,11 @@
             <p>Blog</p>
           </div>
           <div class="testimonials-elem-text">
+            <h2>
+              Blog
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </h2>
             <p class="text-reverse">
               <i class="fas fa-quote-left"></i>
               La page web est un exemple de code HTML et CSS d'un journal en ligne appelé "Journal du Lundi". La page contient 
@@ -175,6 +195,11 @@
       <div class="testimonials-content">
         <div class="testimonials-elem">
           <div class="testimonials-elem-text">
+            <h2>
+              Café
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </h2>
             <p>
               <i class="fas fa-quote-left"></i>
               Cette page web est un site internet pour un café nommé "Café Barrais". La page d'accueil présente des informations 
@@ -196,7 +221,7 @@
           </div>
           <div class="testimonials-elem-project">
             <img src="cafe-thomas-barrais.jpeg" alt="Café"/>
-            <p>Agence Immobilière</p>
+            <p>Café</p>
           </div>
         </div>
       </div>
@@ -211,6 +236,12 @@
             <p>Application Météo</p>
           </div>
           <div class="testimonials-elem-text">
+            <h2>
+              Application Météo
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </h2>
             <p class="text-reverse">
               <i class="fas fa-quote-left"></i>
               Cette page web est une application météo. Ce code définit un objet "weather" qui utilise l'API OpenWeatherMap pour afficher 
@@ -240,6 +271,12 @@
       <div class="testimonials-content">
         <div class="testimonials-elem">
           <div class="testimonials-elem-text">
+            <h2>
+              Mini Jeux
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </h2>
             <p>
               <i class="fas fa-quote-left"></i>
               Cette page affiche 3 mini-jeux codés entièrement en javascript à-partir de canvas. Le CSS est très basique puisque l'objectif
@@ -260,15 +297,24 @@
             </p>
           </div>
           <div class="testimonials-elem-project">
-            <img src="mini-jeu-en-javascript-by-thomas.jpeg" alt="Mini Jeu"/>
-            <p>Mini Jeu</p>
+            <img src="mini-jeu-en-javascript-by-thomas.jpeg" alt="Mini Jeux"/>
+            <p>Mini Jeux</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section id="Contact" class="testimonials-elem-text center mb40">
+    <h2>
+      <i class="fa-solid fa-envelope"></i>
+      Me Contacter
+    </h2>
+    <button class="btn-mail">
+      <a href="mailto:thomasbarrais.dev@gmail.com">M'envoyer un email</a>
+    </button>    
+  </section>
   <footer>
-    <p>Copyright made by Thomas</p>
+    <p class="center">Copyright made by Thomas</p>
   </footer>
 </body>
 </html>

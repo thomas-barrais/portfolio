@@ -30,6 +30,14 @@ a {
   /* Autres styles */
 }
 
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -312,4 +320,30 @@ i.fa-brands.fa-github {
 i:hover {
   transform: scale(1.21);
   color: blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-mail {
+  display: inline-block;
+  background-color: #00a2ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-mail:hover {
+  background-color: #006eff;
+}
+
+.btn-mail a {
+  color: white;
+  text-decoration: none;
 }
