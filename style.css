@@ -235,6 +235,9 @@ i.fa-solid.fa-arrow-up-right-from-square {
   font-size: 3.5rem;
   vertical-align: middle;
 }
+.verti i {
+  vertical-align: middle;
+}
 
 .tech-stack i.fa-brands.fa-html5:hover {
   color: #FF6600;
@@ -362,11 +365,4 @@ i:hover {
 .btn-mail a {
   color: white;
   text-decoration: none;
-}
-
-@media (max-width : 530px) {
-  .navbar {
-    display: block;
-    text-align: center;
-  }
 }

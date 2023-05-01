@@ -1,3 +1,7 @@
+.ml20 {
+  margin-left: 20px;
+}
+
 .testimonials-elem-text p {
   text-align: center;
 }
@@ -6,7 +10,7 @@ i.fa-brands.fa-github {
   margin: 0 0;
 }
 .logo {
-  text-align: center;
+  text-align: justify;;
 }
 
 .text-reverse {
@@ -15,6 +19,11 @@ i.fa-brands.fa-github {
 
 .testimonials-elem {
   flex-direction: column;
+}
+
+.testimonials-elem-profil {
+  display: inline-block;
+  position: relative;
 }
 
 .testimonials-elem-reverse {
@@ -48,15 +57,99 @@ i.fa-brands.fa-github {
 
 .testimonials-elem-project img {
   width: 90vw;
+  height: auto;
   align-items: center;
   text-align: center;
   
 }
 .testimonials-elem-project:hover {
-  transform: scale(0.9);
+  transform: scale(1);
   cursor: pointer;
 }
 
-.container {
-  margin-left: 20px;
+@media (max-width : 530px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .testimonials-elem-profil img {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 320px) {
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cercle-tourne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vw;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .box {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+  }
+  
+  .box:hover {
+    transform: scale(1.21);
+  }
+  
+  .box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+  
+  .circle {
+    width: 90vw;
+    height: 90vw ;
+    border-radius: 50%;
+    border: 1px solid #000;
+    animation: 1s linear infinite alternate boxMagic,
+    4s linear infinite spinning;
+    padding-top: 100vw;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes boxMagic {
+    from {
+      box-shadow:
+      0 0 0 #feac5e,
+      0 0 0 #c779d0,
+      0 0 0 #4bc0c8,
+      0 0 0 #42db75
+    }
+    to {
+      box-shadow:
+      0 -10px 0 #feac5e,
+      -10px 0 0 #c779d0,
+      0 10px 0 #4bc0c8,
+      10px 0 0 #42db75
+    }
+  }
+  
+  @keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
