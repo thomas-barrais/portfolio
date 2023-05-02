@@ -100,13 +100,11 @@ a {
 
 .testimonials {
   padding: 5rem 1rem 5rem 1rem;
-  z-index: 0;
 }
 
 .testimonials-content {
   display: flex;
   flex-direction: column;
-  z-index: 0;
 }
 
 .testimonials-elem {
@@ -119,7 +117,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
-  z-index: 0;
 }
 
 .testimonials-elem-text {
@@ -146,24 +143,6 @@ a {
   position: relative;
 }
 
-.testimonials-elem-profil:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 88%;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 50%;
-}
-
-.testimonials-elem-profil:hover::before {
-  opacity: 1;
-}
-
 
 .testimonials-elem-profil p {
   font-weight: 700;
@@ -182,30 +161,12 @@ a {
 }
 
 .testimonials-elem-project:hover {
-  transform: scale(1.21);
   cursor: pointer;
 }
 
 .testimonials-elem-project {
   display: inline-block;
   position: relative;
-}
-
-.testimonials-elem-project:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.testimonials-elem-project:hover::before {
-  opacity: 1;
 }
 
 .testimonials-elem-project p {
@@ -274,7 +235,6 @@ i.fa-brands.fa-github {
   align-items: center;
   height: 50vh;
   overflow: hidden;
-  z-index: 1;
 }
 
 .box {
@@ -308,6 +268,7 @@ i.fa-brands.fa-github {
   background-color: #000;
   background-size: cover;
   background-position: center;
+  
 }
 
 @keyframes boxMagic {

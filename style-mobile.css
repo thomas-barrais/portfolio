@@ -62,10 +62,6 @@ i.fa-brands.fa-github {
   text-align: center;
   
 }
-.testimonials-elem-project:hover {
-  transform: scale(1);
-  cursor: pointer;
-}
 
 @media (max-width : 530px) {
   .navbar {
